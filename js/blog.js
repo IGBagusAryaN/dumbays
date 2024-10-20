@@ -67,7 +67,7 @@ function renderBlog() {
             </div>
             <div class="title-project">${dataBlog[index].title}</div>
             <div class="duration-project">Duration : ${dataBlog[index].months} Bulan, ${dataBlog[index].days} Hari
-            <div class="post-time-project">${getDistanceTime(dataBlog[index].postAt)} - ${getFullTime(dataBlog[index].postAt)}</div>
+            <div class="post-time-project">${getDistanceTime(dataBlog[index].postAt)}</div>
             <div class="mini-desc-project">${dataBlog[index].description}</div>
             <div class="tech-project">
                 ${dataBlog[index].checkHtml}
@@ -171,5 +171,5 @@ function getFullTime(time) {
   }
   setInterval(function () {
     renderBlog();
-  }, 10000);
+  }, 100000);
  

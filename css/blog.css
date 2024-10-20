@@ -194,8 +194,11 @@ input[type="checkbox"]:checked + label:before {
 
 .card-project .mini-desc-project {
   font-size: 10px;
-  /* text-overflow: ellipsis; */
-  /* max-width: 220px; */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin-top: 10px;
 }
 
